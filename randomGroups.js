@@ -12,3 +12,11 @@ Using the above array shuffling method, create a function called randomGroups th
 an array and returns a random array of arrays each of which will have two students.
 Hint: slice is your friend.
 */
+
+function randomGroups(arr) {
+  const arrays = [];
+
+  for(let i = 0; i < arr.length; i += 2) {
+    arrays.push(arr.slice(i, i+2));
+  }
+}
