@@ -20,3 +20,8 @@ function randomGroups(arr) {
     arrays.push(arr.slice(i, i+2));
   }
 }
+
+module.exports = {
+  shuffle,
+  randomGroups
+}
